@@ -4,7 +4,8 @@ fn main() -> PyResult<()> {
     Python::with_gil(|py| {
         let code = std::ffi::CString::new(
             r#"
-import dataclasses
+from dataclasses import dataclass
+import spacy
 
 @dataclass
 class Person:
