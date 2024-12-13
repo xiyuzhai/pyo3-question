@@ -5,3 +5,4 @@ edition = "2021"
 
 [dependencies]
 pyo3 = { version = "0.23.3", features = ["auto-initialize"] }
+# pyo3 = { path = "../pyo3", features = ["auto-initialize"] }

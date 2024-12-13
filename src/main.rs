@@ -4,7 +4,15 @@ fn main() -> PyResult<()> {
     Python::with_gil(|py| {
         let code = std::ffi::CString::new(
             r#"
-import spacy
+import dataclasses
+
+@dataclass
+class Person:
+    name: str
+    age: int
+
+person = Person("Alice", 30)
+print(person)
 "#,
         )
         .unwrap();
