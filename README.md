@@ -8,7 +8,13 @@ make venv
 ```
 to create a new local virtual python environment with spacy.
 
-Second,
+Then,
+```
+source venv/bin/activate
+```
+to activate the virtual python environment.
+
+Lastly,
 ```
 make run
 ```
